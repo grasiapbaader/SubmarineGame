@@ -30,7 +30,7 @@ BUILDERS = {
 }
 
 
-def make(name: str, **kwargs) -> Surface:
+def make(name: str) -> Surface:
     builder = BUILDERS.get(name)
     if builder is None:
         raise ValueError(f"Unknown entity: {name}")
