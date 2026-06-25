@@ -163,7 +163,7 @@ class Level:
                                (WIN_WIDTH // 2, WIN_HEIGHT // 2 - 10))
         self.level_text_center(22, f'Final Score: {self.score}', C_WHITE,
                                (WIN_WIDTH // 2, WIN_HEIGHT // 2 + 25))
-        self.level_text_center(18, 'Press ENTER to return menu', C_GRAY,
+        self.level_text_center(18, 'Press ESC to return menu', C_GRAY,
                                (WIN_WIDTH // 2, WIN_HEIGHT // 2 + 70))
         pygame.display.flip()
 
@@ -174,7 +174,7 @@ class Level:
                     pygame.quit()
                     quit()
                 if event.type == pygame.KEYDOWN:
-                    if event.key in (pygame.K_RETURN, pygame.K_ESCAPE):
+                    if event.key == pygame.K_ESCAPE:
                         waiting = False
 
     def run(self):
@@ -241,7 +241,7 @@ class Level:
 
             for treasure in self.treasures[:]:
                 if self.sub_rect.colliderect(treasure['rect']):
-                    self.score += TREASURE_SCORE  # adiciona pontos
+                    self.score += TREASURE_SCORE
                     self.treasures.remove(treasure)
 
             if self.invuln > 0:

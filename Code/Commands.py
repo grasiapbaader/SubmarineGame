@@ -23,7 +23,7 @@ class Commands:
 
             self.command_text("Collect treasures to earn points. Avoid sharks and explosives", 20, C_GOLD,
                               (WIN_WIDTH // 2, 260))
-            self.command_text("ESC to go back", 20, C_WHITE, (WIN_WIDTH // 2, 285))
+            self.command_text("Press ESC to go back", 20, C_WHITE, (WIN_WIDTH // 2, 285))
 
             pygame.display.flip()
 

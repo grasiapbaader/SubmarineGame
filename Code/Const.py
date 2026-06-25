@@ -1,13 +1,33 @@
 import pygame
 
+# C
 C_BLUE = (0, 0, 128)
 C_WHITE = (255, 255, 255)
+C_CYAN = (0, 128, 128)
+C_RED = (220, 50, 50)
+C_YELLOW = (255, 215, 0)
+C_GREEN = (50, 200, 80)
+C_DARK_BLUE = (5, 15, 50)
+C_GRAY = (150, 150, 170)
+C_GOLD = (255, 200, 0)
 
-
-#M
+# M
 MENU_OPTION = ('START',
                'COMMANDS',
                'EXIT')
+MINE_DAMAGE = 25
+MINE_SPAWN = 240
+MAX_DEPTH = 2000
+
+# S
+SHARK_DAMAGE = 10
+SHARK_SPAWN = 80
+SUB_MAX_LIFE = 100
+SCROLL_SPEED = 1
+
+# T
+TREASURE_SCORE = 50
+TREASURE_SPAWN = 300
 
 # W
 WIN_WIDTH = 575
